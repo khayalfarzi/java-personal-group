@@ -13,6 +13,7 @@ public class MethodExampleTest {
         assertTrue(MethodExample.containsVowel('a'));
     }
 
+    @Test
     public void testFindVowelsCount() {
         assertEquals(11, findVowelsCount("Hey Java Unit test and clean code"));
     }
