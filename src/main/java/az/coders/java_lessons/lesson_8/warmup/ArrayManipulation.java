@@ -5,4 +5,8 @@ public class ArrayManipulation {
     public static int findDiagSum(int[][] arr) {
         return 0;
     }
+
+    public static int findSum(int[] arr, int length, int step) {
+        return 0;
+    }
 }
