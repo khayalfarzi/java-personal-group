@@ -7,6 +7,6 @@ public class StringManipulationEx {
     }
 
     public static String withoutX2(String given) {
-        return  null;
+        return given.replace("x", " ").trim().replace(" ", "x");
     }
 }
