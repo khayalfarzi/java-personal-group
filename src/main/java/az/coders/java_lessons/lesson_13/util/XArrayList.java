@@ -56,8 +56,13 @@ public class XArrayList<T> implements XList<T> {
     }
 
     private void ensureCapacity(int size, Object[] elementData) {
-        if (size >= elementData.length)
+        if (checkSize(size, elementData)) {
             this.elementData = new Object[size * 2];
-        System.arraycopy(elementData, 0, elementData, 0, elementData.length);
+            System.arraycopy(elementData, 0, elementData, 0, elementData.length);
+        }
+    }
+
+    private boolean checkSize(int size, Object[] elementData) {
+        return size >= elementData.length;
     }
 }
