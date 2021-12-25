@@ -12,7 +12,7 @@ public class PostgreSql implements Sql {
     private static final String pass = "password";
 
     @Override
-    public Connection connection(String path, String user, String pass) {
+    public Connection connection() {
         System.out.println("Postgresql connection started...");
         Connection con = null;
 

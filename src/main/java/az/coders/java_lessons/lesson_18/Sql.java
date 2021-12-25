@@ -5,7 +5,7 @@ import java.sql.Statement;
 
 public interface Sql {
 
-    Connection connection(String path, String user, String pass);
+    Connection connection();
 
     Statement statement(Connection con);
 }
